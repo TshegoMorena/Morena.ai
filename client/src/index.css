@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(40, 15%, 97%);
+  --foreground: hsl(20, 14.3%, 4.1%);
+  --card: hsl(40, 15%, 95%);
+  --card-foreground: hsl(20, 14.3%, 4.1%);
+  --popover: hsl(40, 15%, 97%);
+  --popover-foreground: hsl(20, 14.3%, 4.1%);
+  --primary: hsl(43, 74%, 49%);
+  --primary-foreground: hsl(20, 14.3%, 4.1%);
+  --secondary: hsl(35, 35%, 25%);
+  --secondary-foreground: hsl(40, 15%, 97%);
+  --muted: hsl(40, 10%, 90%);
+  --muted-foreground: hsl(20, 14.3%, 30%);
+  --accent: hsl(43, 74%, 85%);
+  --accent-foreground: hsl(20, 14.3%, 4.1%);
+  --destructive: hsl(0, 84%, 60%);
+  --destructive-foreground: hsl(40, 15%, 97%);
+  --border: hsl(43, 30%, 85%);
+  --input: hsl(40, 15%, 95%);
+  --ring: hsl(43, 74%, 49%);
+  
+  /* African theme colors */
+  --african-dark: hsl(20, 14.3%, 10%);
+  --african-brown: hsl(25, 30%, 15%);
+  --african-gold: hsl(43, 74%, 49%);
+  --african-bronze: hsl(30, 60%, 45%);
+  --african-copper: hsl(25, 50%, 40%);
+  --african-cream: hsl(40, 15%, 97%);
+  --african-light-gold: hsl(43, 50%, 80%);
+  --african-terracotta: hsl(25, 60%, 50%);
+  --african-ochre: hsl(30, 70%, 45%);
+  
+  --radius: 0.75rem;
+  --font-african: 'Inter', sans-serif;
+  --font-elegant: 'Playfair Display', serif;
+}
+
+.dark {
+  --background: hsl(20, 14.3%, 4.1%);
+  --foreground: hsl(40, 15%, 97%);
+  --card: hsl(20, 14.3%, 8%);
+  --card-foreground: hsl(40, 15%, 97%);
+  --popover: hsl(20, 14.3%, 4.1%);
+  --popover-foreground: hsl(40, 15%, 97%);
+  --primary: hsl(43, 74%, 49%);
+  --primary-foreground: hsl(20, 14.3%, 4.1%);
+  --secondary: hsl(35, 35%, 25%);
+  --secondary-foreground: hsl(40, 15%, 97%);
+  --muted: hsl(20, 14.3%, 15%);
+  --muted-foreground: hsl(40, 15%, 60%);
+  --accent: hsl(43, 30%, 20%);
+  --accent-foreground: hsl(43, 74%, 49%);
+  --destructive: hsl(0, 84%, 60%);
+  --destructive-foreground: hsl(40, 15%, 97%);
+  --border: hsl(20, 14.3%, 20%);
+  --input: hsl(20, 14.3%, 15%);
+  --ring: hsl(43, 74%, 49%);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-african antialiased;
+    background-color: var(--african-dark);
+    color: var(--african-cream);
+  }
+}
+
+@layer components {
+  .african-pattern {
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23D4AF37' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  }
+  
+  .cultural-gradient {
+    background: linear-gradient(135deg, var(--african-dark) 0%, var(--african-brown) 100%);
+  }
+  
+  .gold-gradient {
+    background: linear-gradient(135deg, var(--african-gold) 0%, var(--african-bronze) 100%);
+  }
+  
+  .bronze-gradient {
+    background: linear-gradient(135deg, var(--african-bronze) 0%, var(--african-copper) 100%);
+  }
+}
+
+@layer utilities {
+  .text-african-dark { color: var(--african-dark); }
+  .text-african-brown { color: var(--african-brown); }
+  .text-african-gold { color: var(--african-gold); }
+  .text-african-bronze { color: var(--african-bronze); }
+  .text-african-copper { color: var(--african-copper); }
+  .text-african-cream { color: var(--african-cream); }
+  .text-african-light-gold { color: var(--african-light-gold); }
+  .text-african-terracotta { color: var(--african-terracotta); }
+  .text-african-ochre { color: var(--african-ochre); }
+  
+  .bg-african-dark { background-color: var(--african-dark); }
+  .bg-african-brown { background-color: var(--african-brown); }
+  .bg-african-gold { background-color: var(--african-gold); }
+  .bg-african-bronze { background-color: var(--african-bronze); }
+  .bg-african-copper { background-color: var(--african-copper); }
+  .bg-african-cream { background-color: var(--african-cream); }
+  .bg-african-light-gold { background-color: var(--african-light-gold); }
+  .bg-african-terracotta { background-color: var(--african-terracotta); }
+  .bg-african-ochre { background-color: var(--african-ochre); }
+  
+  .border-african-gold { border-color: var(--african-gold); }
+  .border-african-bronze { border-color: var(--african-bronze); }
+  
+  .font-african { font-family: var(--font-african); }
+  .font-elegant { font-family: var(--font-elegant); }
+}
