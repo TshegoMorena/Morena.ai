@@ -77,11 +77,35 @@
 
 @layer components {
   .african-pattern {
-    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23D4AF37' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23D4AF37' fill-opacity='0.15'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  }
+  
+  .african-pattern-rich {
+    background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23D4AF37' fill-opacity='0.08'%3E%3Cpath d='M20 20h20v20H20V20zm40 0h20v20H60V20zm-40 40h20v20H20V60zm40 0h20v20H60V60zM0 0h20v20H0V0zm40 0h20v20H40V0zM0 40h20v20H0V40zm40 0h20v20H40V40z'/%3E%3C/g%3E%3Cg fill='%23CD7F32' fill-opacity='0.05'%3E%3Cpath d='M30 30l10-10 10 10-10 10-10-10zm40 0l10-10 10 10-10 10-10-10zM30 70l10-10 10 10-10 10-10-10zm40 0l10-10 10 10-10 10-10-10z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  }
+  
+  .luxurious-backdrop {
+    background: radial-gradient(ellipse at center, var(--african-dark) 0%, var(--african-brown) 50%, var(--african-dark) 100%);
+    position: relative;
+  }
+  
+  .luxurious-backdrop::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent 30%, var(--african-gold) 30.1%, var(--african-gold) 30.2%, transparent 30.3%), linear-gradient(-45deg, transparent 70%, var(--african-bronze) 70.1%, var(--african-bronze) 70.2%, transparent 70.3%);
+    opacity: 0.03;
   }
   
   .cultural-gradient {
-    background: linear-gradient(135deg, var(--african-dark) 0%, var(--african-brown) 100%);
+    background: linear-gradient(135deg, var(--african-dark) 0%, var(--african-brown) 50%, var(--african-dark) 100%);
+  }
+  
+  .luxury-gradient {
+    background: linear-gradient(135deg, var(--african-brown) 0%, var(--african-dark) 30%, var(--african-brown) 60%, var(--african-dark) 100%);
   }
   
   .gold-gradient {
@@ -90,6 +114,23 @@
   
   .bronze-gradient {
     background: linear-gradient(135deg, var(--african-bronze) 0%, var(--african-copper) 100%);
+  }
+  
+  .premium-gold-gradient {
+    background: linear-gradient(135deg, var(--african-gold) 0%, var(--african-bronze) 50%, var(--african-gold) 100%);
+    box-shadow: 0 8px 32px rgba(212, 175, 55, 0.3);
+  }
+  
+  .african-shimmer {
+    background: linear-gradient(90deg, var(--african-gold) 0%, var(--african-bronze) 50%, var(--african-gold) 100%);
+    background-size: 200% 100%;
+    animation: shimmer 3s ease-in-out infinite;
+  }
+  
+  @keyframes shimmer {
+    0% { background-position: 200% 0; }
+    50% { background-position: 0% 0; }
+    100% { background-position: -200% 0; }
   }
 }
 

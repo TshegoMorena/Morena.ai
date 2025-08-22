@@ -17,7 +17,7 @@ export function Header({ selectedLanguage, onLanguageChange }: HeaderProps) {
             </div>
             <div>
               <h1 className="text-2xl font-elegant font-bold text-african-gold">MORENA</h1>
-              <p className="text-sm text-african-light-gold/80">South African AI Assistant</p>
+              <p className="text-sm text-african-light-gold/80">African AI Assistant</p>
             </div>
           </div>
           
