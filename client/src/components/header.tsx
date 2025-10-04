@@ -13,9 +13,9 @@ export function Header({ selectedLanguage, onLanguageChange }: HeaderProps) {
           {/* Logo and Branding */}
           <div className="flex items-center space-x-4">
             <img 
-              src="/@assets/fc1907eb-9b00-42b9-a520-a9cb050ed336_1759571011552.jpg" 
+              src="/@assets/1868c699-3978-47e5-a4d2-29121c378a4b_1759571352942.jpg" 
               alt="Tshego Morena Logo" 
-              className="w-12 h-12 object-contain rounded-lg"
+              className="w-14 h-14 object-contain"
             />
             <div>
               <h1 className="text-2xl font-elegant font-bold text-african-gold">MORENA</h1>
