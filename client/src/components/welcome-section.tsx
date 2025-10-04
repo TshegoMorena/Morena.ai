@@ -72,7 +72,7 @@ export function WelcomeSection({ onStartChat }: WelcomeSectionProps) {
           className="relative premium-gold-gradient hover:african-shimmer px-12 py-6 text-african-dark font-elegant font-bold text-xl transition-all duration-500 shadow-2xl hover:shadow-african-gold/40 border-2 border-african-gold/50 rounded-3xl hover:scale-105"
         >
           <MessageCircle className="mr-3 h-7 w-7" />
-          Begin Luxury Conversation
+          Start Conversation
           <Sparkles className="ml-3 h-6 w-6 animate-pulse" />
         </Button>
       </div>

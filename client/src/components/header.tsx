@@ -12,9 +12,11 @@ export function Header({ selectedLanguage, onLanguageChange }: HeaderProps) {
         <div className="flex items-center justify-between">
           {/* Logo and Branding */}
           <div className="flex items-center space-x-4">
-            <div className="w-12 h-12 bg-african-gold rounded-lg flex items-center justify-center">
-              <span className="text-african-dark font-bold text-xl font-elegant">M</span>
-            </div>
+            <img 
+              src="/@assets/fc1907eb-9b00-42b9-a520-a9cb050ed336_1759571011552.jpg" 
+              alt="Tshego Morena Logo" 
+              className="w-12 h-12 object-contain rounded-lg"
+            />
             <div>
               <h1 className="text-2xl font-elegant font-bold text-african-gold">MORENA</h1>
               <p className="text-sm text-african-light-gold/80">African AI Assistant</p>

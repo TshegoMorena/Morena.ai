@@ -146,7 +146,7 @@ export function ChatInterface({ isVisible, selectedLanguage }: ChatInterfaceProp
           <div className="flex items-center justify-between mb-4">
             <div className="flex items-center space-x-2">
               <div className="w-3 h-3 bg-african-gold rounded-full animate-pulse"></div>
-              <span className="text-african-gold font-elegant text-sm tracking-wide">LUXURY CONVERSATION</span>
+              <span className="text-african-gold font-elegant text-sm tracking-wide">TSHEGO MORENA</span>
             </div>
             <div className="flex space-x-1">
               <div className="w-2 h-2 bg-african-gold/60 rounded-full"></div>
